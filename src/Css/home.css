@@ -1,0 +1,59 @@
+.background {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  filter: brightness(0.8);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("./codingBG1.jpg");
+}
+.align {
+  text-align: center;
+  width: 99%;
+}
+.intro {
+  font-family: none;
+  color: white;
+  font-size: 7em;
+}
+.row {
+  width: 100%;
+}
+li {
+  display: block !important;
+}
+.homelist {
+  color: white;
+  font-family: serif;
+  font-size: 7vh;
+  line-height: 109px;
+  text-align: center;
+  width: max-content;
+}
+
+.list {
+  width: 100%;
+}
+.info {
+  width: 100%;
+  height: min-content;
+}
+.container-fluid {
+  padding-left: 0% !important;
+}
+.profilepic {
+  border-radius: 50%;
+}
+#profile {
+  background-image: url(/static/media/profilepic.7fc8301b.JPG);
+  border-radius: 50%;
+  height: 133px;
+  width: 127px;
+  justify-content: center;
+  background-position: top;
+}
