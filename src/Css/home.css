@@ -35,19 +35,35 @@ li {
   text-align: center;
   width: max-content;
 }
-
+li {
+  cursor: pointer;
+}
 .list {
   width: 100%;
 }
 .info {
   width: 100%;
   height: min-content;
+  color: violet;
+  font-weight: 500;
 }
 .container-fluid {
   padding-left: 0% !important;
 }
-.profilepic {
-  border-radius: 50%;
+.profile {
+  height: 5em;
+  transition: ease-in;
+  margin: 1em;
+}
+.profile:hover {
+  left: 29em;
+  top: 5em;
+  width: 500px;
+  height: auto;
+  display: block;
+  border-radius: 0%;
+  position: absolute;
+  z-index: 1;
 }
 #profile {
   background-image: url(/static/media/profilepic.7fc8301b.JPG);
