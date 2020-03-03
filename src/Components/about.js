@@ -77,7 +77,7 @@ function about(props) {
         </div>
       </div>
       <div className="row">
-        <Nav></Nav>
+        <Nav switch={props.switch}></Nav>
       </div>
     </div>
   );
