@@ -50,3 +50,29 @@
   color: cornsilk;
   margin-left: 28px;
 }
+#crow {
+  width: 100%;
+  display: inline-flex;
+  overflow: scroll;
+  height: auto;
+  /* justify-content: baseline; */
+  justify-content: center;
+  /* margin-left: 26px; */
+  /* margin-right: 2px; */
+}
+.card {
+  margin-right: 23px !important;
+}
+.cdiv {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-left: 70px;
+  overflow: scroll;
+}
+#BgPortpg {
+  height: 150vh !important;
+}
+.slick-slide.slick-active.slick-current {
+}

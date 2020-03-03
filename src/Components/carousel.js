@@ -42,9 +42,9 @@ class News extends Component {
     var newsTemplate;
     var settings = {
       dots: true,
-      infinite: true,
+      infinite: false,
       slidesToShow: 3,
-      slidesToScroll: 1
+      slidesToScroll: 0
     };
     if (data.length > 0) {
       newsTemplate = data.map(function(item, index) {
@@ -60,9 +60,6 @@ class News extends Component {
     return (
       <div className="news">
         <Slider {...settings}>{newsTemplate}</Slider>
-        <strong className={"news__count " + (data.length > 0 ? "" : "none")}>
-          Total cards: {data.length}
-        </strong>
       </div>
     );
   }

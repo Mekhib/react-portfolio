@@ -17,7 +17,7 @@ class App extends Component {
       {
         name: "The Developers Network",
         blur: "React app that shows conditonal search results",
-        descripion:
+        description:
           "The DEVelopers Network is a concept that brings together the community aspect of stackoverflow, the search power of Google, and the information of The technological web all in one place. It’s designed for old and new developers alike to have all resources in one central place, disregarding the need to search a multitude of websites to find your answers.",
         link: "https://github.com/Mekhib/TheDevelopersNetwork",
         linkToCode: "https://github.com/Mekhib/TheDevelopersNetwork",
@@ -28,7 +28,7 @@ class App extends Component {
       {
         name: "News.Me",
         blurb: "Simple react news site",
-        descripion:
+        description:
           "News.me is a simple, single page React app (Created using create-react-app) That displays top stories, and allows a user to view stories based on category, sources or user defined search and display results in card like layout.",
         link: "https://news-me-5c1ca.web.app/",
         linkToCode: "https://github.com/Mekhib/News.me",
@@ -39,7 +39,7 @@ class App extends Component {
       {
         blurb: "An app for finding T.v Show info",
         name: "What's On?",
-        descripion:
+        description:
           "A simple app that utilizes 2 T.V api's to get quick info on televison shows with a goal of mobile responsivness (Try it out, tell me what you think!)",
         link: "https://whats-on-tv.herokuapp.com/",
         linkToCode: "https://github.com/Mekhib/WhatsOn-",
@@ -50,7 +50,7 @@ class App extends Component {
       {
         name: "gify",
         blurb: "Displays gifs on search",
-        descripion: "JavaScript and API call combined to make a GIF website",
+        description: "JavaScript and API call combined to make a GIF website",
         link: "https://mekhib.github.io/-Gifyapi/",
         linkToCode: "https://github.com/Mekhib/-Gifyapi",
         screenshot:
@@ -60,7 +60,7 @@ class App extends Component {
       {
         name: "215-Contacts",
         blurb: "App that allows sharing of contact info",
-        descripion:
+        description:
           "An app that allows you to add friends and view thier contact information; Login and sign-up required",
         link: "https://github.com/Mekhib/Project-2",
         linkToCode: "https://github.com/Mekhib/Project-2",

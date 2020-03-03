@@ -5,7 +5,7 @@ import Nav from "../Components/nav";
 function portfolio(props) {
   return (
     <div className=".container">
-      <div className="background"></div>
+      <div className="background" id="BgPortpg"></div>
       <div className="info">
         <img
           src="https://lh3.googleusercontent.com/suAaZQMbgVZgcHyV0O-IElkh8P6QQfKK3kNfpBjfQYBpmLaLKdrYEDlPfIvSHDA78eRYPVjh88UarDZApvL_jl04nUvK8alp6JHIUfR4NHVVLOc1G0Dpf2RLX2A3HHpcR9FXwQ3s3lg=w2400"
@@ -50,7 +50,7 @@ function portfolio(props) {
             GIT
           </div>
           <div className="scroll">
-            <i class="sicon fas fa-language"></i>
+            <i class="sicon fab fa-language"></i>
             French(oui,oui)
           </div>
         </marquee>
@@ -58,11 +58,11 @@ function portfolio(props) {
       <div className="row" id="picrow">
         <Carousel></Carousel>
       </div>
-      <div className="row">
-        {props.projects.map(site => {
-          return (
-            <div>
-              <div class="card">
+      <div className="row" id="crow">
+        <div className="cdiv">
+          {props.projects.map(site => {
+            return (
+              <div class="card" style={{ width: "17rem" }}>
                 <img
                   class="card-img-top"
                   src={site.screenshot}
@@ -71,20 +71,32 @@ function portfolio(props) {
                 <div class="card-body">
                   <h5 class="card-title">{site.name}</h5>
                   <p class="card-text">{site.description}</p>
+                  <a href={site.link} class="btn btn-info">
+                    Go to github
+                  </a>
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Languages: {site.languages}</li>
-                  <li class="list-group-item">
-                    <a href={site.link}>Link to site</a>
-                  </li>
-                  <li class="list-group-item">
-                    <a href={site.linkToCode}>View Code</a>
-                  </li>
-                </ul>
               </div>
-            </div>
-          );
-        })}
+            );
+            // return (
+            //   <div class="card">
+            //     <img class="card-img-top" src={site.screenshot} alt="Card cap" />
+            //     <div class="card-body">
+            //       <h5 class="card-title">{site.name}</h5>
+            //       <p class="card-text">{site.description}</p>
+            //     </div>
+            //     <ul class="list-group list-group-flush">
+            //       <li class="list-group-item">Languages: {site.languages}</li>
+            //       <li class="list-group-item">
+            //         <a href={site.link}>Link to site</a>
+            //       </li>
+            //       <li class="list-group-item">
+            //         <a href={site.linkToCode}>View Code</a>
+            //       </li>
+            //     </ul>
+            //   </div>
+            // );
+          })}
+        </div>
       </div>
       <div className="row">
         <Nav switch={props.switch}></Nav>
