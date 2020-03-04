@@ -73,3 +73,6 @@ li {
   justify-content: center;
   background-position: top;
 }
+#hbg {
+  height: 100vh;
+}

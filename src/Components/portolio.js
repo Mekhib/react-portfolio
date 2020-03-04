@@ -15,8 +15,7 @@ function portfolio(props) {
         | Full Stack Developer | Pro Sarcasm
       </div>
       <div className="row">
-        <h1 className="langtit">Languages & Technologies</h1>
-        <marquee vspace="1px" width="fit-content">
+        <marquee vspace="1px" width="fit-content" scrolldelay={100}>
           <div className="scroll">
             <i class="sicon fab fa-html5"></i>
             HTML
@@ -71,10 +70,16 @@ function portfolio(props) {
                 <div class="card-body">
                   <h5 class="card-title">{site.name}</h5>
                   <p class="card-text">{site.description}</p>
-                  <a href={site.link} class="btn btn-info">
-                    Go to github
-                  </a>
                 </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Languages: {site.languages}</li>
+                  <li class="list-group-item">
+                    <a href={site.link}>Link to site</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href={site.linkToCode}>View Code</a>
+                  </li>{" "}
+                </ul>
               </div>
             );
             // return (
@@ -98,6 +103,7 @@ function portfolio(props) {
           })}
         </div>
       </div>
+
       <div className="row">
         <Nav switch={props.switch}></Nav>
       </div>

@@ -115,3 +115,6 @@
   font-family: "Raleway";
   font-size: 24px;
 }
+.slick-track {
+  width: 100% !important;
+}
