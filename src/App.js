@@ -4,6 +4,13 @@ import Home from "./Components/home";
 import About from "./Components/about";
 import Portfolio from "./Components/portolio";
 import Contact from "./Components/contact";
+import {
+  FindInPageTwoTone,
+  ImportContactsTwoTone,
+  TvTwoTone,
+  GifTwoTone,
+  ContactsTwoTone
+} from "@material-ui/icons";
 
 class App extends Component {
   state = {
@@ -23,7 +30,8 @@ class App extends Component {
         linkToCode: "https://github.com/Mekhib/TheDevelopersNetwork",
         screenshot:
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg",
-        languages: "React, JS, NODE, Mongo"
+        languages: "React, JS, NODE, Mongo",
+        icon: FindInPageTwoTone
       },
       {
         name: "News.Me",
@@ -34,7 +42,8 @@ class App extends Component {
         linkToCode: "https://github.com/Mekhib/News.me",
         screenshot:
           "https://media.gettyimages.com/photos/electronic-technician-holding-tweezers-and-assemblin-a-circuit-board-picture-id166103292?s=612x612",
-        languages: "React, CSS, HTML"
+        languages: "React, CSS, HTML",
+        icon: ImportContactsTwoTone
       },
       {
         blurb: "An app for finding T.v Show info",
@@ -45,7 +54,8 @@ class App extends Component {
         linkToCode: "https://github.com/Mekhib/WhatsOn-",
         screenshot:
           "https://media.gettyimages.com/photos/electronic-technician-holding-tweezers-and-assemblin-a-circuit-board-picture-id166103292?s=612x612",
-        languages: "JS, Node, Express"
+        languages: "JS, Node, Express",
+        icon: TvTwoTone
       },
       {
         name: "gify",
@@ -55,7 +65,8 @@ class App extends Component {
         linkToCode: "https://github.com/Mekhib/-Gifyapi",
         screenshot:
           "https://media.gettyimages.com/photos/electronic-technician-holding-tweezers-and-assemblin-a-circuit-board-picture-id166103292?s=612x612",
-        languages: "Bootstrap, HTML"
+        languages: "Bootstrap, HTML",
+        icon: GifTwoTone
       },
       {
         name: "215-Contacts",
@@ -66,17 +77,21 @@ class App extends Component {
         linkToCode: "https://github.com/Mekhib/Project-2",
         screenshot:
           "https://media.gettyimages.com/photos/electronic-technician-holding-tweezers-and-assemblin-a-circuit-board-picture-id166103292?s=612x612",
-        languages: "Mongo, JS, HTML, CSS, Express"
+        languages: "Mongo, JS, HTML, CSS, Express",
+        icon: ContactsTwoTone
       }
     ]
   };
-
+  toggleAccordion = () => {
+    this.classList.toggle("active");
+    this.nextElementSibling.classList.toggle("active");
+  };
   switch = page => {
     this.setState({ home: false });
     this.setState({ about: false });
-    this.setState({ conatct: false });
+    this.setState({ contact: false });
     this.setState({ porfolio: false });
-    this.setState({ [page]: true });
+    this.setState({ [page]: true }, () => console.log(this.state.pages));
   };
   render() {
     let component = null;
@@ -93,7 +108,9 @@ class App extends Component {
         );
         break;
       case this.state.contact:
-        component = <Contact switch={this.switch} />;
+        component = (
+          <Contact switch={this.switch} list={this.toggleAccordion} />
+        );
         break;
       default:
         component = <Home switch={this.switch} />;

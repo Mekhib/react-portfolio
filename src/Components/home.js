@@ -7,7 +7,7 @@ function home(props) {
   console.log(props);
   return (
     <div>
-      <div className="background"></div>
+      <div className="background" id="hbg"></div>
       <div className="container-fluid">
         <div className="info">
           <img

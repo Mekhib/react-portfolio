@@ -54,7 +54,7 @@
   width: 100%;
   display: inline-flex;
   overflow: scroll;
-  height: auto;
+  height: 28em;
   /* justify-content: baseline; */
   justify-content: center;
   /* margin-left: 26px; */
@@ -74,7 +74,7 @@
   overflow: scroll;
 }
 #BgPortpg {
-  height: 150vh !important;
+  height: 127vh !important;
 }
 .card-body {
   color: violet;

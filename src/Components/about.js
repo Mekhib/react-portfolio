@@ -32,7 +32,10 @@ function about(props) {
               <i class="fas fa-microchip icons"></i>Mern, JS, MYSQL,HTML,CSS
             </li>
             <li>
-              <i class="fas fa-file-alt icons"></i> Resume{" "}
+              <i class="fas fa-file-alt icons"></i>{" "}
+              <a href="https://drive.google.com/file/d/1fdslUdLC4gaBEtq0NjmeLwjBFujr8XQq/view">
+                Resume{" "}
+              </a>
             </li>
             <li>
               <i class="far fa-file-alt icons"></i>Resume (non-tech)
