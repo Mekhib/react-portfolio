@@ -4,7 +4,7 @@ import "../Css/about.css";
 function about(props) {
   return (
     <div class="container-fluid">
-      <div className="background"></div>
+      <div className="background" id="aboutBg"></div>
       <div className="info">
         <img
           src="https://lh3.googleusercontent.com/suAaZQMbgVZgcHyV0O-IElkh8P6QQfKK3kNfpBjfQYBpmLaLKdrYEDlPfIvSHDA78eRYPVjh88UarDZApvL_jl04nUvK8alp6JHIUfR4NHVVLOc1G0Dpf2RLX2A3HHpcR9FXwQ3s3lg=w2400"
@@ -13,7 +13,7 @@ function about(props) {
         />
         | Full Stack Developer | Pro Sarcasm
       </div>
-      <div className="row">
+      <div className="row" id="mRow">
         <div className="col-sm-4">
           <ul className="ablist">
             <li className="listi">
@@ -79,7 +79,7 @@ function about(props) {
           </div>
         </div>
       </div>
-      <div className="row">
+      <div className="row" id="mRow">
         <Nav switch={props.switch}></Nav>
       </div>
     </div>

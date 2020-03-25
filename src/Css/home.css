@@ -80,3 +80,28 @@ li {
   cursor: auto;
   border-top: 0px solid !important;
 }
+@media only screen and (max-width: 570px) {
+  .Hlist {
+    width: 92%;
+    margin-left: 16px;
+  }
+  .homelist {
+    width: 105% !important;
+    line-height: unset !important;
+  }
+  ul {
+    width: 105% !important;
+  }
+  .nav {
+    display: block !important;
+  }
+  /* .row {
+    width: 108%;
+  } */
+  li + li {
+    border: none !important;
+  }
+  #hbg {
+    height: 157vh !important;
+  }
+}
