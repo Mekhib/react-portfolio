@@ -15,51 +15,81 @@
     ),
     url("./codingBG1.jpg");
 }
-.accordion:hover .accordion-item:hover .accordion-item-content,
-.accordion .accordion-item--default .accordion-item-content {
-  height: 6em;
+.content {
+  background: black;
+  color: violet;
+}
+.accordion > input[type="radio"] {
+  position: absolute;
+  left: -100vw;
 }
 
-.accordion-item-content,
-.accordion:hover .accordion-item-content {
+.accordion .content {
+  overflow-y: hidden;
   height: 0;
-  overflow: hidden;
-  transition: height 0.25s;
+  transition: height 0.3s ease;
 }
+
+.accordion > input[type="radio"]:checked ~ .content {
+  height: auto;
+  overflow: visible;
+  padding: 15px;
+  border: 1px solid black;
+  border-top: 0;
+  border-radius: 12px;
+  box-shadow: 2px 1px 11px 2px violet;
+}
+
 .accordion {
-  padding: 0;
-  margin: 0 auto;
-  width: 63%;
-  font-family: "PT Sans" sans-serif;
+  margin-bottom: 1em;
 }
 
-.accordion .accordion-item {
-  background-image: linear-gradient(to bottom, #c946c5, #000000);
-  border-bottom: 1px solid #666;
-  padding: 1em;
-  color: #eee;
+.accordion > input[type="radio"]:checked ~ .content {
+  padding: 15px;
+  border: 1px solid #e8e8e8;
+  border-top: 0;
+  box-shadow: 2px 1px 11px 2px violet;
 }
 
-.accordion h1 {
+.accordion .handle {
   margin: 0;
+  font-size: 1.125em;
+  line-height: 1.2em;
 }
 
-.accordion .accordion-item:nth-child(1) {
-  background-color: hsl(200, 80%, 60%);
-  background-image: linear-gradient(to bottom, #c946c5, #000000);
+.accordion label {
+  display: block;
+  color: white;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 15px;
+  background: #3d2e3d;
+  border-radius: 12px;
 }
 
-.accordion .accordion-item:nth-child(2) {
-  background-color: hsl(280, 60%, 45%);
-  background-image: linear-gradient(to bottom, #c946c5, #000000);
+.accordion label:hover,
+.accordion label:focus {
+  background: #d8d8d8;
 }
 
-.accordion .accordion-item:nth-child(3) {
-  background-color: hsl(40, 80%, 40%);
-  background-image: linear-gradient(to bottom, #c946c5, #000000);
+.accordion .handle label:before {
+  font-family: "fontawesome";
+  content: "\f054";
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 0.58em;
+  line-height: 1.556em;
+  vertical-align: middle;
 }
 
-.accordion .accordion-item:nth-child(4) {
-  background-color: hsl(80, 40%, 40%);
-  background-image: linear-gradient(to bottom, #c946c5, #000000);
+.accordion > input[type="radio"]:checked ~ .handle label:before {
+  content: "\f078";
+}
+
+.accordion {
+  max-width: 65em;
+}
+
+.accordion p:last-child {
+  margin-bottom: 0;
 }

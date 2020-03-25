@@ -40,38 +40,111 @@ function contact(props) {
           </ul>
         </div>
         <div className="col">
-          <div class="accordion">
-            <section class="accordion-item">
-              <h1>Section 1</h1>
-              <div class="accordion-item-content">
-                <p>Content for section 1</p>
+          <div class="container">
+            <section class="accordion">
+              <input
+                type="radio"
+                name="accordion"
+                id="handle1"
+                checked="checked"
+              />
+              <h2 class="handle">
+                <label for="handle1">
+                  <i class="fas fa-question-circle"></i>What are Your Short term
+                  goals?
+                </label>
+              </h2>
+              <div class="content">
+                <p>
+                  <strong>My</strong> Overall goal is to learn not only web
+                  Develoment, but to be well educated in mobile development as
+                  well, aquiring knowledge about Go, Java, Swift and c. Learning
+                  advanced Javascript and adjacent libaries (React, Vue,
+                  Angulur) are on the queue as well!
+                </p>
               </div>
             </section>
-            <section class="accordion-item">
-              <h1>Section 2</h1>
-              <div class="accordion-item-content">
-                <p>Content for section 2</p>
+            <section class="accordion">
+              <input type="radio" name="accordion" id="handle2" />
+              <h2 class="handle">
+                <label for="handle2">
+                  <i class="fas fa-question-circle"></i>What are your long term
+                  goals?
+                </label>
+              </h2>
+              <div class="content">
+                <p>
+                  Ultimately, My goal is to learn and Develop high quality code
+                  on a team that continues to elevate and inspire. I want to be
+                  on a team that creates meaningful code thats makes a real
+                  impact. I would also love to get my drivers License
+                </p>
               </div>
             </section>
-            <section class="accordion-item accordion-item--default">
-              <h1>Section 3</h1>
-              <div class="accordion-item-content">
-                <p>Content for section 3</p>
-                <p>This is my default state.</p>
+            <section class="accordion">
+              <input
+                type="radio"
+                name="accordion"
+                id="handle1"
+                checked="checked"
+              />
+              <h2 class="handle">
+                <label for="handle1">
+                  <i class="fas fa-question-circle"></i>Describe your dream job.
+                </label>
+              </h2>
+              <div class="content">
+                <p>
+                  My dream job is to be CEO of Microsoft cooperation. Their new
+                  found passion in cloud computing intrest me, and I have a
+                  vision for merging and syncing github and windows directly to
+                  aid developers.
+                </p>
               </div>
             </section>
-            <section class="accordion-item">
-              <h1>Section 4</h1>
-              <div class="accordion-item-content">
-                <p>Content for section 4</p>
+            <section class="accordion">
+              <input
+                type="radio"
+                name="accordion"
+                id="handle1"
+                checked="checked"
+              />
+              <h2 class="handle">
+                <label for="handle1">
+                  <i class="fas fa-question-circle"></i>What kind of work
+                  environment do you like best?
+                </label>
+              </h2>
+              <div class="content">
+                <p>
+                  I love a working with a team. It allows me to bounce Ideas off
+                  of people and to keep ideas flowing easy. Any problems could
+                  be solved on the team and adding new features would be faster.
+                </p>
+              </div>
+            </section>
+            <section class="accordion">
+              <input
+                type="radio"
+                name="accordion"
+                id="handle1"
+                checked="checked"
+              />
+              <h2 class="handle">
+                <label for="handle1">
+                  <i class="fas fa-question-circle"></i>Is fight club a
+                  Christmas Movie?
+                </label>
+              </h2>
+              <div class="content">
+                <p>It takes place on Christmas, bro.</p>
               </div>
             </section>
           </div>
         </div>
-
-        <div className="row">
-          <Nav switch={props.switch}></Nav>
-        </div>
+      </div>
+      <div className="row">
+        <Nav switch={props.switch}></Nav>
       </div>
     </div>
   );

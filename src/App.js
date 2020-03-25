@@ -91,11 +91,14 @@ class App extends Component {
     this.setState({ about: false });
     this.setState({ contact: false });
     this.setState({ porfolio: false });
-    this.setState({ [page]: true }, () => console.log(this.state.pages));
+    this.setState({ [page]: true });
   };
   render() {
     let component = null;
     switch (true) {
+      case this.state.contact:
+        component = <Contact switch={this.switch} />;
+        break;
       case this.state.home:
         component = <Home switch={this.switch} />;
         break;
@@ -105,11 +108,6 @@ class App extends Component {
       case this.state.portfolio:
         component = (
           <Portfolio switch={this.switch} projects={this.state.projects} />
-        );
-        break;
-      case this.state.contact:
-        component = (
-          <Contact switch={this.switch} list={this.toggleAccordion} />
         );
         break;
       default:

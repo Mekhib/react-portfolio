@@ -20,10 +20,10 @@ function home(props) {
         <div className="row">
           <div className="list">
             <ul className="homelist">
-              <li>A</li>
-              <li>Developer with</li>
-              <li>Heart, Dedication, passion</li>
-              <li>(....and acne)</li>
+              <li className="Hlist">A</li>
+              <li className="Hlist">Developer with</li>
+              <li className="Hlist">Heart, Dedication, passion</li>
+              <li className="Hlist">(....and acne)</li>
             </ul>
           </div>
         </div>

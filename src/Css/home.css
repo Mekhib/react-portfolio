@@ -76,3 +76,7 @@ li {
 #hbg {
   height: 100vh;
 }
+.Hlist {
+  cursor: auto;
+  border-top: 0px solid !important;
+}

@@ -97,16 +97,15 @@ li + li {
   border: 1px solid violet;
   z-index: 3;
   line-height: 33px;
-  box-shadow: 0 20px 50px violet;
+  box-shadow: 0 4px 10px violet;
   color: white;
 }
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 2px;
   height: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  border-radius: 8px;
-  background: violet;
+  background: #491949;
 }
 .header {
   font-size: 2rem;

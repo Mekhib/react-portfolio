@@ -32,7 +32,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 2px;
   height: 3px;
 }
 .scroll {
@@ -54,7 +54,7 @@
   width: 100%;
   display: inline-flex;
   overflow: scroll;
-  height: 28em;
+  height: 35em;
   /* justify-content: baseline; */
   justify-content: center;
   /* margin-left: 26px; */
