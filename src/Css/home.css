@@ -74,34 +74,41 @@ li {
   background-position: top;
 }
 #hbg {
-  height: 100vh;
+  height: 167vh;
 }
 .Hlist {
   cursor: auto;
   border-top: 0px solid !important;
 }
 @media only screen and (max-width: 570px) {
+  #nav {
+    margin-left: 15px;
+  }
   .Hlist {
     width: 92%;
-    margin-left: 16px;
+    margin-left: 30px;
   }
   .homelist {
     width: 105% !important;
     line-height: unset !important;
   }
   ul {
-    width: 105% !important;
+    width: 126% !important;
   }
   .nav {
     display: block !important;
+    width: 100% !important;
   }
-  /* .row {
-    width: 108%;
-  } */
+  .navList {
+    background-image: linear-gradient(to bottom, #8d218a, #1d242a);
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+
   li + li {
     border: none !important;
   }
   #hbg {
-    height: 157vh !important;
+    height: 167vh !important;
   }
 }

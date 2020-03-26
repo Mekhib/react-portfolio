@@ -4,7 +4,7 @@ import Nav from "./nav";
 function contact(props) {
   return (
     <div>
-      <div className="background"></div>
+      <div className="background responsiveBg3"></div>
       <div className="info">
         <img
           src="https://lh3.googleusercontent.com/suAaZQMbgVZgcHyV0O-IElkh8P6QQfKK3kNfpBjfQYBpmLaLKdrYEDlPfIvSHDA78eRYPVjh88UarDZApvL_jl04nUvK8alp6JHIUfR4NHVVLOc1G0Dpf2RLX2A3HHpcR9FXwQ3s3lg=w2400"
@@ -19,19 +19,19 @@ function contact(props) {
             <li className="listi">
               <i class="fas fa-at icons"></i>Mekhi19132@gmail.com
             </li>
-            <li>
+            <li className="listi">
               <i class="fab fa-github icons"></i>
               <a href="https://github.com/Mekhib">GitHub =></a>
             </li>
-            <li>
+            <li className="listi">
               <i class="fab fa-linkedin icons"></i>
               <a href="https://www.linkedin.com/in/mekhithedev/">Linkedin =></a>
             </li>
-            <li>
+            <li className="listi">
               <i class="fas fa-phone-square-alt icons"></i>267-506-0545 (Text Me
               anytime!*)
             </li>
-            <li>
+            <li className="listi">
               <i class="fas fa-file-alt icons"></i>{" "}
               <a href="https://drive.google.com/file/d/1fdslUdLC4gaBEtq0NjmeLwjBFujr8XQq/view">
                 Resume
@@ -40,7 +40,7 @@ function contact(props) {
           </ul>
         </div>
         <div className="col">
-          <div class="container">
+          <div class="container" id="faqAccordian">
             <section class="accordion">
               <input
                 type="radio"
@@ -143,7 +143,7 @@ function contact(props) {
           </div>
         </div>
       </div>
-      <div className="row">
+      <div className="row responsiveRow3">
         <Nav switch={props.switch}></Nav>
       </div>
     </div>

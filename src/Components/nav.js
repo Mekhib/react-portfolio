@@ -7,25 +7,25 @@ function Nav(props) {
     <div className="container-fluid">
       <div className="align">
         <ul className="nav">
-          <li onClick={() => props.switch("home")}>
+          <li className="navList" onClick={() => props.switch("home")}>
             <a className="hover">
               <i class="fas fa-home"></i>
               Home
             </a>
           </li>
-          <li onClick={() => props.switch("about")}>
+          <li className="navList" onClick={() => props.switch("about")}>
             <a className="hover">
               <i class="fas fa-info-circle"></i>About
             </a>
           </li>
-          <li onClick={() => props.switch("portfolio")}>
+          <li className="navList" onClick={() => props.switch("portfolio")}>
             <a className="hover">
-              <i class="fas fa-star"></i>Starred
+              <i className="fas fa-star"></i>Starred
             </a>
           </li>
-          <li onClick={() => props.switch("contact")}>
+          <li className="navList" onClick={() => props.switch("contact")}>
             <a className="hover">
-              <i class="fas fa-id-card"></i>Contact
+              <i className="fas fa-id-card"></i>Contact
             </a>
           </li>
         </ul>

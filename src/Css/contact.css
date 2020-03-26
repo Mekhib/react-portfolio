@@ -93,3 +93,23 @@
 .accordion p:last-child {
   margin-bottom: 0;
 }
+@media only screen and (max-width: 570px) {
+  .responsiveBg3 {
+    height: 225vh;
+  }
+  .col-4 {
+    max-width: 100% !important;
+  }
+  #faqAccordian {
+    margin-right: 5px !important;
+    margin-left: 15px;
+  }
+  .listi {
+    margin-left: 15px !important;
+  }
+  .responsiveRow3 {
+    margin-left: 36px !important;
+    width: 81%;
+    margin-top: 13px;
+  }
+}

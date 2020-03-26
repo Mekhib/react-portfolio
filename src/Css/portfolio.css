@@ -16,7 +16,7 @@
   width: 100%;
   height: min-content;
   color: black;
-  font-weight: 500;
+  font-weight: 0 !important;
 }
 .carousel-item,
 .carousel-item.active {
@@ -74,7 +74,7 @@
   overflow: scroll;
 }
 #BgPortpg {
-  height: 127vh !important;
+  height: 127vh;
 }
 .card-body {
   color: violet;
@@ -108,4 +108,26 @@
   transition-delay: 0s;
 }
 .slick-slide.slick-active.slick-current {
+}
+@media only screen and (max-width: 570px) {
+  #BgPortpg {
+    height: 245vh;
+  }
+  .news {
+    width: 87% !important;
+    margin-left: 24px !important;
+  }
+  #crow {
+    margin-left: 0px !important;
+  }
+  .responsiveRow2 {
+    margin-left: 40px !important;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin-top: 30px;
+  }
+  .info {
+    font-size: small;
+  }
 }

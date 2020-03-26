@@ -108,7 +108,7 @@ function portfolio(props) {
           })}
         </div> */}
       </div>
-      <div className="row">
+      <div className="row responsiveRow2">
         <Nav switch={props.switch}></Nav>
       </div>
     </div>
