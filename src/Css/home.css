@@ -34,12 +34,14 @@ li {
   line-height: 109px;
   text-align: center;
   width: max-content;
+  margin: 0px auto 0px !important;
 }
 li {
   cursor: pointer;
 }
 .list {
   width: 100%;
+  text-align: "-webkit-center";
 }
 .info {
   width: 100%;
@@ -72,9 +74,6 @@ li {
   width: 127px;
   justify-content: center;
   background-position: top;
-}
-#hbg {
-  height: 167vh;
 }
 .Hlist {
   cursor: auto;

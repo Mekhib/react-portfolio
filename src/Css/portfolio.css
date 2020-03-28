@@ -74,7 +74,7 @@
   overflow: scroll;
 }
 #BgPortpg {
-  height: 127vh;
+  height: 137vh !important;
 }
 .card-body {
   color: violet;
