@@ -16,6 +16,9 @@
   text-align: center;
   width: 99%;
 }
+#splashlist {
+  margin: 0px !important;
+}
 .intro {
   font-family: none;
   color: white;
@@ -41,7 +44,7 @@ li {
 }
 .list {
   width: 100%;
-  text-align: "-webkit-center";
+  text-align: -webkit-center;
 }
 .info {
   width: 100%;
@@ -93,6 +96,7 @@ li {
   }
   ul {
     width: 126% !important;
+    margin: auto !important;
   }
   .nav {
     display: block !important;

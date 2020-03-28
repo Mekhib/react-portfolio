@@ -95,7 +95,7 @@
 }
 @media only screen and (max-width: 570px) {
   .responsiveBg3 {
-    height: 225vh;
+    height: 235vh;
   }
   .col-4 {
     max-width: 100% !important;

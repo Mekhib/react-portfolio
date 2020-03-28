@@ -3,7 +3,7 @@
 }
 .align {
   width: 100%;
-  text-align: center;
+  text-align: -webkit-center;
 }
 .nav {
   display: inline-flex;
@@ -11,7 +11,6 @@
   font-size: 19px !important;
 }
 ul {
-  margin: 150px auto 0;
   padding: 0;
   list-style: none;
   display: table;

@@ -19,7 +19,7 @@ function home(props) {
         </div>
         <div className="row">
           <div className="list">
-            <ul className="homelist">
+            <ul className="homelist" id="splashlist">
               <li className="Hlist">A</li>
               <li className="Hlist">Developer with</li>
               <li className="Hlist">Heart, Dedication, passion</li>

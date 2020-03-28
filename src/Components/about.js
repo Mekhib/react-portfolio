@@ -49,17 +49,17 @@ function about(props) {
               <i class="fas fa-info iconh"></i>About me
             </h1>
             <p className="text">
-              software. I love the complex intricacies of code and the fluidity
-              of an optimized UI. I have always been fascinated with how the
-              hardware of a computer interacts with its software and vise versa.
-              I’ve been told on countless occasions that I should narrow my area
-              of study from the relatively broad computer science to something
-              more refined and specific. To me, however, having a degree with
-              such a broad range of applications and knowledge of coding
-              languages in a world where technology is rapidly changing is more
-              valuable than ever before. I have extremely high ambitions for
-              myself. My dream occupation is to be Chief Executive Officer of
-              the Microsoft. Bill Gates is someone I look up to, not just
+              I software. I love the complex intricacies of code and the
+              fluidity of an optimized UI. I have always been fascinated with
+              how the hardware of a computer interacts with its software and
+              vise versa. I’ve been told on countless occasions that I should
+              narrow my area of study from the relatively broad computer science
+              to something more refined and specific. To me, however, having a
+              degree with such a broad range of applications and knowledge of
+              coding languages in a world where technology is rapidly changing
+              is more valuable than ever before. I have extremely high ambitions
+              for myself. My dream occupation is to be Chief Executive Officer
+              of the Microsoft. Bill Gates is someone I look up to, not just
               because of his phenomenal philanthropy work, but because he, along
               with Paul Allen created the best computing operating system on the
               planet with windows, dominated the productivity space with

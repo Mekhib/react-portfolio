@@ -23,6 +23,7 @@
   font-size: 18px;
   color: white;
   line-height: 3em;
+  margin-left: 23px;
 }
 
 /* List element */
@@ -73,7 +74,7 @@ li + li {
   border-radius: 20% !important;
 }
 #aboutBg {
-  height: 109vh !important;
+  height: 112vh;
 }
 .profile:hover {
   left: 29em;
@@ -122,6 +123,9 @@ li + li {
   box-shadow: 0 20px 50px violet;
 }
 @media only screen and (max-width: 570px) {
+  .ablist {
+    margin-left: 0px !important;
+  }
   .responsiveRow1 {
     margin-left: 14px !important;
     margin-top: 26px !important;
